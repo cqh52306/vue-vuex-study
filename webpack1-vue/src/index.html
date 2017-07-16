@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+  <title>vue-vuex-demo</title>
+</head>
+
+<body>
+  <div id="app" style="height:100%;">
+    <!--动态绑定路由动画 vue-router提供-->
+    <transition name="slide">
+      <router-view v-loading.fullscreen.lock="loading" element-loading-text="拼命加载中"></router-view>
+    </transition>
+  </div>
+  <script type="text/javascript" src="/assets/main.js"></script>
+</body>
+
+</html>
